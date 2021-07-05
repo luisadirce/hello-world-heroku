@@ -35,27 +35,27 @@ public class TodaysDate implements Serializable {
         switch (value){
             case "":
             case "pt":
-                dateText = "Dia e data atual: ";
+                dateText = "Data e horário atual: ";
                 date = dateText+strDate;
                 break;
             case "en":
-                dateText = "Current day and date: ";
+                dateText = "Current date and time: ";
                 date = dateText+strDate;
                 break;
             case "de":
-                dateText = "Aktueller Tag und Datum: ";
+                dateText = "Aktuelles Datum und Uhrzeit: ";
                 date = dateText+strDate;
                 break;
             case "fr":
-                dateText = "Jour et date du jour: ";
+                dateText = "Date et heure actuelles: ";
                 date = dateText+strDate;
                 break;
             case "es":
-                dateText = "Día y fecha actual: ";
+                dateText = "Fecha y hora actual: ";
                 date = dateText+strDate;
                 break;
             case "it":
-                dateText = "Giorno e data attuali: ";
+                dateText = "Data e ora correnti: ";
                 date = dateText+strDate;
                 break;
         }
