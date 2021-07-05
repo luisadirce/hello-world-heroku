@@ -15,7 +15,7 @@
     <body>
         <jsp:useBean id="myBean" class="hello.MessageBean"/>
         <jsp:useBean id="myGreeting" class="hello.TemporalGreeting"/>
-        <jsp:useBean id="myDate" class="hello.Date"/>
+        <jsp:useBean id="myDate" class="hello.TodaysDate"/>
         <h1>SayHello.jsp</h1>
         <% String lang = request.getParameter("lang"); %>
         <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>

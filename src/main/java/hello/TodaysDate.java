@@ -15,10 +15,10 @@ import java.util.Calendar;
  *
  * @author luisa
  */
-public class Date implements Serializable {
+public class TodaysDate implements Serializable {
     private String date;
     
-    public Date() {
+    public TodaysDate() {
     }
     
     public String getDate() {
@@ -27,7 +27,7 @@ public class Date implements Serializable {
     
     public void setDate(String value) {
         Date currentDate = Calendar.getInstance().getTime();  
-        DateFormat dateFormat = new SimpleDateFormat("mm-dd-yyyy hh:mm");  
+        DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm");  
         String strDate = dateFormat.format(currentDate);  
         
         String dateText;
