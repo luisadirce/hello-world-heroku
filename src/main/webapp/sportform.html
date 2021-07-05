@@ -9,17 +9,29 @@ and open the template in the editor.
         <title>Formulário de Esportes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
     </head>
     <body>
-        <div>Saiba o último título de cada time</div>
-           <form action="tellhistory.jsp" method="post">
-           <br>Time: 
-           <input type="radio" name="lang" value="fla" checked> Flamengo
-           <input type="radio" name="lang" value="flu"> Fluminense
-           <input type="radio" name="lang" value="vas"> Vasco
-           <input type="radio" name="lang" value="bot"> Botafogo
-           <br><br>
-           <input type="submit" value="Ver história"/>
-        </form>
+        <div class="content-box">
+            <h1>Saiba o último título de cada time</h1>
+            <form action="tellhistory.jsp" method="post">
+                <p>Time:</p>
+                <div class="form-check">
+                    <input type="radio" name="lang" value="fla" checked> Flamengo
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="lang" value="flu"> Fluminense
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="lang" value="vas"> Vasco
+                </div>
+                <div class="form-check last-child">
+                    <input type="radio" name="lang" value="bot"> Botafogo
+                </div>
+                <div class="form-check form-button">
+                    <input type="submit" value="Ver história"/>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

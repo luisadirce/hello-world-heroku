@@ -9,20 +9,45 @@ and open the template in the editor.
         <title>Formulário de HelloWorld (usando o sayhello.jsp)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
     </head>
     <body>
-        <div>Formulário de HelloWorld (usando o sayhello.jsp)</div>
-           <form action="sayhello.jsp" method="post">
-           <br>Idioma: 
-           <input type="radio" name="lang" value="pt" checked> Português
-           <input type="radio" name="lang" value="en"> Inglês
-           <input type="radio" name="lang" value="fr"> Francês
-           <input type="radio" name="lang" value="de"> Alemão
-           <input type="radio" name="lang" value="es"> Espanhol
-           <input type="radio" name="lang" value="it"> Italiano<br><br>
-           Nome: <input type="text" name="nome"/><br><br>
-           <input type="submit" value="Cumprimentar"/>
-        </form>
-
+        <div class="content-box">
+            <h1>Formulário de HelloWorld</h1>
+            <form action="sayhello.jsp" method="post">
+                <p>Idioma:</p>  
+                <div class="form-check">
+                    <input type="radio" id="portugues" name="lang" value="pt" checked> 
+                    <label for="portugues">Português</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="ingles" name="lang" value="en"> 
+                    <label for="ingles">Inglês</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="frances" name="lang" value="fr"> 
+                    <label for="frances">Francês</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="alemao" name="lang" value="de"> 
+                    <label for="alemao">Alemão</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="espanhol" name="lang" value="es"> 
+                    <label for="espanhol">Espanhol</label>
+                </div>
+                <div class="form-check last-child">
+                    <input type="radio" id="italiano" name="lang" value="it"> 
+                    <label for="italiano">Italiano</label>
+                </div>
+                <div class="form-check form-text last-child">
+                    <p id="text-input">Nome:</p> 
+                    <input type="text"  name="nome"/>
+                </div>
+                <div class="form-check form-button">
+                    <input type="submit" value="Cumprimentar"/>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
