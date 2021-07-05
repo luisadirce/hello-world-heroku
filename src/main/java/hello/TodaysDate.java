@@ -27,7 +27,7 @@ public class TodaysDate implements Serializable {
     
     public void setDate(String value) {
         Date currentDate = Calendar.getInstance().getTime();  
-        DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm");  
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
         String strDate = dateFormat.format(currentDate);  
         
         String dateText;
